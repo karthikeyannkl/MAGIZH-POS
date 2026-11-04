@@ -7,10 +7,6 @@ import {
 
 type Tab = 'home' | 'billing' | 'products' | 'customers' | 'more'
 
-const money = (n: number) => new Intl.NumberFormat('en-IN', {
-  style: 'currency', currency: 'INR', maximumFractionDigits: 0
-}).format(n)
-
 export default function App() {
   const [tab, setTab] = useState<Tab>('home')
   const [language, setLanguage] = useState<'EN' | 'தமிழ்'>('EN')
